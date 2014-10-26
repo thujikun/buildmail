@@ -462,7 +462,7 @@ MimeNode.prototype.buildHeaders = function() {
                     }
 
                     if (/[\u0080-\uFFFF]/.test(_self.content)) {
-                        structured.params.charset = 'utf-8';
+                        structured.params.charset = 'iso-2022-jp';
                     }
                 }
                 _self._isFlowedContent = String(structured.params.format).toLowerCase().trim() === 'flowed';
